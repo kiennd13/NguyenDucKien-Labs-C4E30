@@ -1,0 +1,25 @@
+<html>
+   <body>
+      <table border = 1>
+        {% for key, value in infor.items() %}
+        <tr>
+           <th> {{ key }} </th>
+           <td> {{ value }} </td>
+        </tr>
+        {% endfor %}
+        {%if infor['school'] == 'PTIT' %}
+            <p> Good choice!</p>
+        {% else %}
+            <p>Bad choice!</p>
+        {% endif %}
+      </table>  
+   </body>
+</html>
+
+
+
+
+
+
+
+
