@@ -1,0 +1,20 @@
+<html>
+    <body style="background-color:powderblue;">
+        {% if error %}
+            <p><strong>Error:</strong> {{ error }}</p>
+        {% endif %}
+        <form action = "" method = post>
+            <dl>
+               <dt>
+                   :</dt>
+               <dd>
+                  <input type = text name = username>
+               </dd>
+               <dt>Password:</dt>
+               <dd><input type = password name = password></dd>
+            </dl>
+            <p><input type = submit value = Login></p>
+        </form> 
+        <title>Login</title>   
+    </body>
+</html>
