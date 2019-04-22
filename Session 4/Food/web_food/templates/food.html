@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+</head>
+<body>
+
+    <form method="POST">
+        <label>Tên món:</label>
+        <input name='name'/>
+        <br>    
+        <label>Giá món:</label>
+        <input name='price'/>
+        <br>    
+        <label>Link ảnh:</label>
+        <input name='image_url'/>
+        <input type="submit"/>
+    </form>
+
+
+    <table style="width:100%" border="3">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    
+        {% for v in data %}
+        <tr>
+            <td>{{v.name}}</td>
+            <td>{{v.price}}</td>
+            <td>
+                <img src="{{v.image_url}}" height="50" width="50"/>
+
+            </td>
+            <td> <a href="/food-edit/{{v.name}}" >edit</a> </td>
+        </tr>
+        {% endfor %}
+    </table>
+     
+    
+</body>
+</html>

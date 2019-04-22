@@ -1,0 +1,16 @@
+<html>
+    <body style="background-color:red">
+        <table border= 1>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            {% for player in list_player %}
+                <tr>
+                    <th>{{player.Name}}</th>
+                    <th>{{player.Age}}</th>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+   <body style="background-color:powderblue;">
+       <form method="POST">
+           <label>Tên món : </label>
+           <input name = 'ten_mon'/>
+           <br><br/>
+           <label>Giá :     </label>
+           <input name = 'gia'/>
+           <br><br/>
+           <!-- <label>Link ảnh :     </label>
+           <input name = 'link_anh'/>
+           <br><br/> -->
+           <input type="submit" value="submit"/>
+       </form  >
+        <table border = 1>
+            <!-- <td>Name</td> <td>Prices</td> -->
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <!-- <th>Image</th> -->
+            </tr>
+            {% for food in a %}
+                <tr>
+                    <th> {{ food.name }} </th>
+                    <td> {{ food.price }} </td>
+                    <!-- <td><img src="{{food.jpg}}" width="100" height="100" ></td> -->
+                </tr>
+            {% endfor %}   
+        </table>
+        <title>Food</title>
+   </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+</head>
+<body>
+
+    <form method="POST">
+        <label>Tên món:</label>
+        <input name='name' value="{{ food.name }}"/>
+        <br>    
+        <label>Giá món:</label>
+        <input name='price' value ="{{food.price }}"/>
+        <br>    
+        <label>Link ảnh:</label>
+        <input name='image_url' value ="{{food.image_url }}"/>
+        <input type="submit"/>
+    </form>
+ 
+    
+</body>
+</html>
