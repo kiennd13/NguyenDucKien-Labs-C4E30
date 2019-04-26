@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+    {% if error %}
+        <p><strong>Error:</strong> {{ error }}
+    {% endif %}
+    <form method="POST">
+        <ul id = "wrapper">
+        <li>
+                <label>Username:</label>
+                <input name = "username"/>
+        </li>
+        <li>
+                <label>Password:</label>
+                <input name = "password" type="password"/>
+        </li>
+        <li>
+                <input type="Submit" value="Login">
+        </li>
+            
+        </ul>
+        
+    </form> 
+</body>
+</html>
